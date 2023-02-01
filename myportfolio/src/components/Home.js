@@ -83,7 +83,7 @@ export default function Home() {
 
   <div class="row">
     <div class="col" >
-      <NavLink to='https://bihar-tourism-vicky.netlify.app'><motion.h3 animate={{scale:1.2}} transition={{duration:0.3 ,repeat:Infinity}} style={{marginTop:'2rem',color:'lightgreen'}}>Bihar Tourism Website</motion.h3></NavLink>
+      <NavLink to='https://bihar-tourism-vicky.netlify.app'><motion.h3  whileHover={{color:'yellow'}} animate={{scale:1.2}} transition={{duration:0.3 ,repeat:Infinity}} style={{marginTop:'2rem',color:'lightgreen'}}>Bihar Tourism Website</motion.h3></NavLink>
      <NavLink to='https://bihar-tourism-vicky.netlify.app'><motion.img whileHover={{scale:1.1}} src='buddha2.jpg' className='img-thumbnail' style={{marginTop:'3rem'}} alt='....'/></NavLink>
      
       <div className="col" style={{marginTop:'1rem'}}>

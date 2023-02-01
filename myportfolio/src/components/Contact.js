@@ -36,7 +36,7 @@ I'm interested in freelance opportunities-especially front end projects.However,
   <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
 </div>
 <br></br>
-<button className='btn btn-primary'>Send</button>
+<motion.button whileHover={{scale:1.2}} className='btn btn-primary'>Send</motion.button>
 
 </div></center>
 {/**form ends here */}
