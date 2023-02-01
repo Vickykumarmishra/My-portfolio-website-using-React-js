@@ -79,8 +79,8 @@ export default function Home() {
 
   <div class="row">
     <div class="col" >
-     <NavLink to='https://bihar-tourism-vicky.netlify.app'> <h3 style={{marginTop:'2rem'}}>Bihar Tourism Website</h3></NavLink>
-     <NavLink to='https://bihar-tourism-vicky.netlify.app'><img src='buddha2.jpg' className='img-thumbnail' style={{marginTop:'3rem'}}/></NavLink> 
+      <NavLink to='https://bihar-tourism-vicky.netlify.app'><h3 style={{marginTop:'2rem',color:'lightgreen'}}>Bihar Tourism Website</h3></NavLink>
+     <NavLink to='https://bihar-tourism-vicky.netlify.app'><img src='buddha2.jpg' className='img-thumbnail' style={{marginTop:'3rem'}} alt='....'/></NavLink>
       <div class="col" style={{marginTop:'1rem'}}>
       <p>This is a tourism website pf Bihar, state of India, where you will find the complete details of all tourist places of incredible Bihar and its cultural heritage .it has features like: Booking System, DarkMode, Bill generation,etc.</p>
     </div>
