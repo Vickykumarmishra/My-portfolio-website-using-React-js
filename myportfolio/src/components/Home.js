@@ -1,12 +1,16 @@
 import React from 'react'
+import { motion } from 'framer-motion'
 import { NavLink, Outlet } from 'react-router-dom'
 export default function Home() {
   return (
     <div>
 
-        <h1 style={{color:'lightgreen'}}> <b>Hi, I'm Vicky, Front End developer</b></h1><hr/>
+        <motion.h1  
+        animate={{opacity:1,scale:1.2}} 
+         initial={{opacity:0}}  
+         transition={{delay:0.4,duration:5,repeat:Infinity}}  style={{color:'lightgreen'}}> <b>Hi, I'm Vicky, Front End developer</b></motion.h1><hr/>
         <p style={{color:'white'}}>React js developer/javascript</p>
-  <NavLink to="/Contact"><button className='btn btn-light'>contact me!</button></NavLink>
+  <NavLink to="/Contact"><motion.button  whileHover={{scale:1.2}} className='btn btn-light'>contact me!</motion.button></NavLink>
     <Outlet/>  
 <hr></hr>
     <h3 style={{fontSize:"2em", color:'white'}}>My Skills:</h3>
@@ -21,7 +25,7 @@ export default function Home() {
     <div class="col">
     
 
-    <center><table style={{color:'white', border:'0.1rem solid green'}}>
+    <center><motion.table whileHover={{scale:1.1}} style={{color:'white', border:'0.1rem solid green'}}>
     
     <tr>
     <th style={{color:'lightgreen'}}>Skill</th>
@@ -61,12 +65,12 @@ export default function Home() {
     
     
 
-    </table></center><hr style={{color:'lightgreen'}}></hr>
+    </motion.table></center><hr style={{color:'lightgreen'}}></hr>
 
 
     </div>
     <div class="col">
-      <img src='portfolio_image1-green.png' className='img-thumbnail' style={{borderRadius:"50%",height:'25rem'}}></img>
+      <motion.img  whileHover={{scale:1.1}} src='portfolio_image1-green.png' className='img-thumbnail' style={{borderRadius:"50%",height:'25rem'}}></motion.img>
     </div>
 
   </div>
@@ -74,19 +78,20 @@ export default function Home() {
 </div>
 
 {/** projects*/}
-<h3 style={{fontSize:"2em", color:'white'}}>My Projects:</h3>
+<h3   style={{fontSize:"2em", color:'white'}}>My Projects:</h3>
 <center><div class="container text-center" style={{color:'lightgreen'}}>
 
   <div class="row">
     <div class="col" >
-      <NavLink to='https://bihar-tourism-vicky.netlify.app'><h3 style={{marginTop:'2rem',color:'lightgreen'}}>Bihar Tourism Website</h3></NavLink>
-     <NavLink to='https://bihar-tourism-vicky.netlify.app'><img src='buddha2.jpg' className='img-thumbnail' style={{marginTop:'3rem'}} alt='....'/></NavLink>
-      <div class="col" style={{marginTop:'1rem'}}>
-      <p>This is a tourism website pf Bihar, state of India, where you will find the complete details of all tourist places of incredible Bihar and its cultural heritage .it has features like: Booking System, DarkMode, Bill generation,etc.</p>
+      <NavLink to='https://bihar-tourism-vicky.netlify.app'><motion.h3 animate={{scale:1.2}} transition={{duration:0.3 ,repeat:Infinity}} style={{marginTop:'2rem',color:'lightgreen'}}>Bihar Tourism Website</motion.h3></NavLink>
+     <NavLink to='https://bihar-tourism-vicky.netlify.app'><motion.img whileHover={{scale:1.1}} src='buddha2.jpg' className='img-thumbnail' style={{marginTop:'3rem'}} alt='....'/></NavLink>
+     
+      <div className="col" style={{marginTop:'1rem'}}>
+      <motion.p whileHover={{color:'yellow'}}>This is a tourism website of Bihar, state of India, where you will find the complete details of all tourist places of incredible Bihar and its cultural heritage .it has features like: Booking System, DarkMode, Bill generation,etc.</motion.p>
     </div>
     </div>
   </div>
-
+  
 </div></center>
     </div>
   )
